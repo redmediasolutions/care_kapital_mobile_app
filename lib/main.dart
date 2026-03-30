@@ -1,4 +1,6 @@
-import 'package:care_kapital_mobile_app/pages/homepage/homepage.dart';
+//import 'package:care_kapital_mobile_app/pages/homepage/homepage.dart';
+import 'package:care_kapital_mobile_app/pages/investments/investments.dart';
+import 'package:care_kapital_mobile_app/pages/payments/payments.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Homepage(),
+      debugShowCheckedModeBanner: false,
+      home: Investments(),
     );
   }
-}
+} 
