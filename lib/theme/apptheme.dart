@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 
 // --- COLOR PALETTE ---
 
-final Color primaryBlue = const Color(0xFF0D63D1); 
+final Color primaryBlue = const Color.fromARGB(255, 10, 98, 214); 
 final Color successGreen = const Color(0xFF00B167); 
 final Color backgroundLight = const Color(0xFFF4F7FA); 
 final Color surfaceWhite = Colors.white;
 final Color textDark = const Color(0xFF1A1C1E);
 final Color textGrey = const Color(0xFF6C757D);
+final Color containerpurple = const Color(0xFF9735FF);
+final Color containerorange= const Color(0xFFFF5700);
+
+
 
 final ThemeData appTheme = ThemeData(
   useMaterial3: true,
@@ -22,11 +26,19 @@ final ThemeData appTheme = ThemeData(
     surface: surfaceWhite,
     onSurface: textDark,
     background: backgroundLight,
+   tertiary: containerpurple,
+    onTertiary: Colors.white,
+
+    // Using Orange for ErrorContainer or a custom slot
+    errorContainer: containerorange,
+    onErrorContainer: Colors.white,
+
   ),
 
   // ✨ TYPOGRAPHY SYSTEM
  
   textTheme: TextTheme(
+    
     // Portfolio Value Large Number
     displayMedium: TextStyle(
       fontFamily: 'Inter', // Or your chosen font
