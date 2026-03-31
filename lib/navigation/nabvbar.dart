@@ -1,4 +1,6 @@
 import 'package:care_kapital_mobile_app/pages/homepage/homepage.dart';
+import 'package:care_kapital_mobile_app/pages/investments/investments.dart';
+import 'package:care_kapital_mobile_app/pages/payments/payments.dart';
 import 'package:care_kapital_mobile_app/pages/profile/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +18,8 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   // List of pages to display for each tab
   final List<Widget> _pages = [
     const Homepage(),
-        const Center(child: Text('Investments Page')),
-    const Center(child: Text('Payouts Page')),
+        const Investments(),
+    const Payments(),
     const Profile()
   ];
 
